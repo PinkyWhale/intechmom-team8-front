@@ -6,3 +6,12 @@ body{
   font-family: 'Inter', sans-serif;
   font-family: 'Montserrat', sans-serif;
 }
+
+.logo-edvisto{
+  padding: 20px;
+}
+
+.img-edvisto{
+  width: 125px;
+  height: 60px;
+}

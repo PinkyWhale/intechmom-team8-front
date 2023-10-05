@@ -14,20 +14,35 @@
   <title>Asistente</title>
 </head>
 <body>
+  <!--navbar-->
+  <nav class="bg-[#6100FF] grid grid-cols-2 place-content-between">
+    <div class="logo-edvisto">
+        <a href="/#" class="flex items-center"><img class="img-edvisto" src="img/Ed_logo_rectangle.svg" alt="logo edvisto"></a>
+    </div>
+    <div class="place-self-center">
+        <span class="text-2xl font-semibold dark:text-white">Título del Módulo</span>
+    </div>
+  </nav>
+  <!--seccion general-->
   <section class="h-screen flex overflow-hidden">
     <!--area izq-->
     <div class="bg-white w-9/12 p-6">
     </div>
     <!--area derecha-->
     <div class="flex-col justify-center bg-[#0B0033] w-3/12 p-6">
-      <h3 class="text-2xl mb-8 text-[#FFFFFF] text-center">¡Hola Maria!</h3>
-      <img src="img/perrito.png" alt="perrito astronauta">
-      <p class="text-[#FFFFFF] text-center p-6">Soy tu asistente en linea ¿En qué puedo ayudarte hoy?</p>
+      <div class="flex justify-end">
+        <span><img src="img/btn-back.svg" alt="boton atras"></span>
+      </div>
+      <div>
+        <h3 class="text-2xl mb-8 text-[#FFFFFF] text-center">¡Hola Maria!</h3>
+        <img src="img/perrito.png" alt="perrito astronauta">
+        <p class="text-[#FFFFFF] text-center p-6">Soy tu asistente en linea ¿En qué puedo ayudarte hoy?</p>
+      </div>
       
       <!--chatbox-->
       <div class="flex justify-center">
         <textarea id="message" rows="1" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Escribe aqui..."></textarea>
-        <button type="submit" class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">
+        <button type="submit" >
           <img src="img/enviar.png" alt="boton enviar" class="btn-enviar">
       </button>
       </div>
