@@ -1,17 +1,154 @@
-.selector-for-some-widget {
-  box-sizing: content-box;
+#abrir-cerrar {
+  background: url('../img/fechaBlanco.png') 50% / cover no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  flex-shrink: 0;
 }
 
-body{
-  font-family: 'Inter', sans-serif;
-  font-family: 'Montserrat', sans-serif;
+#avirtual {
+  background: url('../img/perrito.png') 50% / cover no-repeat;
+  width: 50.267px;
+  height: 50.267px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  flex-shrink: 0;
 }
 
-.logo-edvisto{
-  padding: 20px;
+.barra-lateral-cerrada #avirtual {
+  background: url('../img/perrito_profesor_abierto.png') 50% / cover no-repeat;
 }
 
-.img-edvisto{
-  width: 125px;
-  height: 60px;
+#chat {
+  background: url('../img/ChatBlanco.png') 50% / cover no-repeat;
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  flex-shrink: 0;
+}
+
+#comunidad {
+  background: url('../img/Comunidad_Blanco.png') 50% / cover no-repeat;
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  flex-shrink: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Estilos generales */
+.contenedor {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: white;
+}
+
+/* Estilos para el fondo de la interfaz */
+.fondo {
+  flex: 9;
+  background: #FFF;
+}
+
+/* Estilos para la barra lateral */
+.contenido {
+  flex: 1;
+  display: flex;
+  left: 1010px;
+  top: 88px;
+  /*position: static;*/
+}
+
+
+/* Estilos para el nuevo contenedor 2 */
+
+.contenedor-lateral {
+  /* background: #0B0033; */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+  background: rgba(246, 246, 246, 0.60);
+  box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.10) inset, 0px 0px 3px 0px rgba(0, 0, 0, 0.55), 0px 8px 40px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(40.774227142333984px);
+}
+
+/* Estilos para el nuevo elemento interno */
+
+.menu-lateral {
+  display: flex;
+  width: 91px;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.barra-lateral {
+  /* display:grid; */
+  flex-direction: column;
+  width: 80%;
+  justify-content: space-around;
+  justify-items: center;
+  flex-shrink: 0;
+  background: #0B0033;
+}
+
+.barra-lateral-cerrada {
+  width: 60px; /* Ancho más pequeño cuando está cerrada */
+  /* Otros estilos específicos para la barra cerrada */
+}
+
+.barra-lateral-cerrada #abrir-cerrar{
+  display: none;
+}
+
+
+.titulo {
+  color: #FFF;
+  font-family: Urbanist;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  padding-top: 47px;
+}
+
+imagen-chatbot {
+  width: 280px;
+  height: 280px;
+  flex-shrink: 0;
+}
+
+.info-chatbot {
+  color: #FFF;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.inputboton {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inputBarraLateral {
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  background: #F8F3FF;
 }

@@ -1,53 +1,45 @@
-<html lang="en">
+<!DOCTYPE html>
+
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--tailwind-->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!--fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Montserrat:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
-  <!--css-->
-  <link rel="stylesheet" href="style/main-style.css">
-  <link rel="stylesheet" href="style/chat-style.css">
-  <title>Asistente</title>
+  <title>AsistenteVirtual</title>
+  <link rel="stylesheet" href="style\main-style.css">
+  <script src="/JS/chatbot.js"></script>
+
 </head>
+
 <body>
-  <!--navbar-->
-  <nav class="bg-[#6100FF] grid grid-cols-2 place-content-between">
-    <div class="logo-edvisto">
-        <a href="/#" class="flex items-center"><img class="img-edvisto" src="img/Ed_logo_rectangle.svg" alt="logo edvisto"></a>
-    </div>
-    <div class="place-self-center">
-        <span class="text-2xl font-semibold dark:text-white">Título del Módulo</span>
-    </div>
-  </nav>
-  <!--seccion general-->
-  <section class="h-screen flex overflow-hidden">
-    <!--area izq-->
-    <div class="bg-white w-9/12 p-6">
-    </div>
-    <!--area derecha-->
-    <div class="flex-col justify-center bg-[#0B0033] w-3/12 p-6">
-      <div class="flex justify-end">
-        <span><img src="img/btn-back.svg" alt="boton atras"></span>
+  <div class="contenedor">
+    <div class="fondo">interfaz de fondo</div>
+    <div class="contenido">
+      <div id="contenedor-lateral" class="contenedor-lateral">
+        <div class="menu-lateral">
+          <div id="abrir-cerrar"></div>
+          <div id="avirtual" class="barra-lateral-cerrada"></div>
+          <div id="chat"></div>
+          <div id="comunidad"></div>
+        </div>
       </div>
-      <div>
-        <h3 class="text-2xl mb-8 text-[#FFFFFF] text-center">¡Hola Maria!</h3>
-        <img src="img/perrito.png" alt="perrito astronauta">
-        <p class="text-[#FFFFFF] text-center p-6">Soy tu asistente en linea ¿En qué puedo ayudarte hoy?</p>
-      </div>
-      
-      <!--chatbox-->
-      <div class="flex justify-center">
-        <textarea id="message" rows="1" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Escribe aqui..."></textarea>
-        <button type="submit" >
-          <img src="img/enviar.png" alt="boton enviar" class="btn-enviar">
-      </button>
+      <div class="barra-lateral" id="barra-lateral">
+        <div class="titulo">¡Bienvenido/a!</div>
+        <img class="imagen-chatbot" src="img\perrito.png" alt="Chatbot">
+        <div class="info-chatbot">Soy tu asistente en línea ¿En qué puedo ayudarte hoy?</div>
+        <div class="inputboton">
+          <div>
+            <input id="pregunta" class="inputBarraLateral" type="text" name="ingresa pregunta" size="14">
+          </div>
+          <div> 
+            <img id="boton-enviar" src="img\enviar.png" alt="boton enviar">
+          </div>
+        </div>
       </div>
     </div>
 
-  </section>
+  </div>
+  </div>
 </body>
+
 </html>
