@@ -44,3 +44,73 @@
 	flex-shrink: 0;
 	border: 0;
 }
+
+.btn-lupa {
+	background: 50%;
+	width: 15px;
+	height: 15px;
+	flex-shrink: 0;
+	border: 0
+}
+
+.search-container {
+	background-color: #0B0033;
+	margin: 1em;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 1px solid;
+	border-color: #ddd;
+}
+
+.input-buscar {
+	border: none;
+	cursor: pointer;
+}
+
+.buscar-btn {
+
+}
+
+.nav-chat {
+	list-style: none;
+	color: #ddd;
+
+}
+
+ul{
+	display: inline;
+}
+
+li {
+	display: inline-flex;
+	padding: 1em;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+}
+
+li:hover{
+	border-radius: 20px;
+	background: rgba(28, 187, 196, 0.33);
+}
+
+.asist1 {
+	display: inline-block;
+    max-width: 50%;
+	height: auto;
+
+}
+.asist2 {
+	display: inline-block;
+    max-width: 30%;
+	height: auto;
+}
+
+.chatbox{
+	background-color: #ddd;
+	height: 400px;
+	width: 100px;
+}

@@ -58,4 +58,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
 
+function showVentChat() {
+  var x = document.getElementById("ventChat");
+  if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+ 
 
