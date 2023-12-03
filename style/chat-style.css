@@ -15,6 +15,7 @@ li {
 
 li:hover{
 	border-radius: 20px;
+	-webkit-text-stroke: 1px lightblue;
 	background: rgba(28, 187, 196, 0.33);
 }
 
