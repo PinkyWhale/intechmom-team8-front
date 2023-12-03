@@ -1,4 +1,46 @@
-.btn-enviar{
-	width: 2em;
-	height: 2em;
+.chat-container {
+	width: 200px;
+	height: 40px;
+	border-radius: 10px;
+	background: #F8F3FF;
+	box-sizing: border-box;
+}
+  
+.btn-enviar {
+   fill: lightblue !important;
+   width: 2em;
+   height: 2em;
+}
+  
+.chat-input {
+	flex: 1;
+	padding: 8px;
+	border: none;
+	border-radius: 3px;
+	margin-right: 10px;
+  }
+
+.chat-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.send-button{
+	border: 0;
+	padding: 1px 1px;
+	background-color: #fff;
+}
+
+.btn-gralchat{
+	background: url('../img/ChatBlanco.png') 50% / cover no-repeat;
+	width: 80px;
+	height: 80px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	flex-shrink: 0;
+	border: 0;
 }

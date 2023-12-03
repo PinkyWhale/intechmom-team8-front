@@ -20,14 +20,6 @@
   background: url('../img/perrito_profesor_abierto.png') 50% / cover no-repeat;
 }
 
-#chat {
-  background: url('../img/ChatBlanco.png') 50% / cover no-repeat;
-  width: 80px;
-  height: 80px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  flex-shrink: 0;
-}
 
 #comunidad {
   background: url('../img/Comunidad_Blanco.png') 50% / cover no-repeat;
@@ -96,7 +88,7 @@ body {
   /* display:grid; */
   flex-direction: column;
   width: 80%;
-  justify-content: space-around;
+  justify-content: space-between;
   justify-items: center;
   flex-shrink: 0;
   background: #0B0033;
@@ -120,7 +112,7 @@ body {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  padding-top: 47px;
+  padding-top: 20px;
 }
 
 imagen-chatbot {
@@ -144,11 +136,5 @@ imagen-chatbot {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.inputBarraLateral {
-  width: 200px;
-  height: 30px;
-  border-radius: 20px;
-  background: #F8F3FF;
+  padding-bottom: 30px;
 }

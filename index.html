@@ -6,8 +6,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AsistenteVirtual</title>
-  <link rel="stylesheet" href="style\main-style.css">
+  <link rel="stylesheet" href="style/main-style.css">
+  <link rel="stylesheet" href="style/chat-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
   <script src="/JS/chatbot.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#avirtual").click(function(){
+        $(".container-aibot").hide();
+      });
+      $("#avirtual").click(function(){
+        $(".container-aibot").show();
+      });
+      $("#chat").click(function(){
+        $(".container-chatcomunidad").show();
+      });
+      $("#chat").click(function(){
+        $(".container-chatcomunidad").hide();
+      });
+    });
+  </script>
 
 </head>
 
@@ -19,27 +40,41 @@
         <div class="menu-lateral">
           <div id="abrir-cerrar"></div>
           <div id="avirtual" class="barra-lateral-cerrada"></div>
-          <div id="chat"></div>
+          <div id="chat">
+            <button class="btn-gralchat"></button>
+          </div>
           <div id="comunidad"></div>
         </div>
       </div>
       <div class="barra-lateral" id="barra-lateral">
-        <div class="titulo">¡Bienvenido/a!</div>
-        <img class="imagen-chatbot" src="img\perrito.png" alt="Chatbot">
-        <div class="info-chatbot">Soy tu asistente en línea ¿En qué puedo ayudarte hoy?</div>
-        <div class="inputboton">
-          <div>
-            <input id="pregunta" class="inputBarraLateral" type="text" name="ingresa pregunta" size="14">
+        <div class="container-barralateral">
+          <!--ventana ai-->
+          <div class="container-aibot" id="ventanaaibot">
+            <div class="titulo">¡Bienvenido/a!</div>
+            <img class="imagen-chatbot" src="img/perrito_profesor.png" alt="Chatbot">
+            <div class="info-chatbot"> <p>Soy tu asistente en línea</br>¿En qué puedo ayudarte hoy?</p></div>
+            <div class="inputboton">
+              <div class="chat-container">
+                <div class="chat-box">
+                  <input id="pregunta" class="chat-input" type="text" name="ingresa pregunta" size="14" placeholder="¿Como...">
+                  <button class="send-button"><img id="boton-enviar" class="btn-enviar" src="img/enviar.svg" alt="boton enviar"></button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div> 
-            <img id="boton-enviar" src="img\enviar.png" alt="boton enviar">
+
+          <!--ventana comunidad-->
+          <div class="container-chatcomunidad" id="ventanachatcomunidad">
+            
+
           </div>
+
         </div>
       </div>
     </div>
 
   </div>
-  </div>
+  
 </body>
 
 </html>
