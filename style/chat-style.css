@@ -85,7 +85,7 @@ li:hover{
 
 .search-container {
 	background-color: #0B0033;
-	margin: 1em;
+	margin: 0 10px 0 10px;
 	font-size: 20px;
 	border-radius: 5px;
 	border: 1px solid;
@@ -101,7 +101,10 @@ li:hover{
 .nav-chat {
 	list-style: none;
 	color: #ddd;
-
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 1em;
 }
 
 .asist1 {
