@@ -1,11 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
+  /*Declaracion de Elementos */
     const menuLateral = document.querySelector(".menu-lateral");
     const barraLateral = document.querySelector(".barra-lateral");
     const botonAbrirCerrar = menuLateral.querySelector("#abrir-cerrar");
     const botonAvirtual = document.getElementById("avirtual");
     const contenedorLateral = document.getElementById("contenedor-lateral");
+    
+    /*Elementos ocultos */
     barraLateral.style.display = "none";
     botonAbrirCerrar.style.display= "none";
+
+    /* Seteo de barra en false */
     let barraLateralAbierta = false;
     let estiloContenedorLateral = contenedorLateral.style.maxHeight = "280px";
 
@@ -58,13 +63,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
 
-function showVentChat() {
-  var x = document.getElementById("ventChat");
-  if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
+  function showVentChat() {
+    var x = document.getElementById("ventChat");
+    if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
       }
-    }
  
 
