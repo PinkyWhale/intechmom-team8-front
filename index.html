@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script src="/JS/conexion.js"></script>
   <script src="/JS/chatbot.js"></script>
 </head>
 
@@ -79,7 +81,7 @@
                 <div id="messages" class="contenedor-mensajes"></div>
                 <div class="contenedor-footer">
                     <textarea id = "message" class="form-control" placeholder="Podríamos..."></textarea>
-                    <button id="send" class="btn btn-success send-button"><img id="boton-enviar" class="btn-chatenviar" src="img/enviar.svg" alt="boton enviar"></button>
+                    <button id="send" class="btn btn-success send-button"><img id="btn-enviarchat" class="btn-chatenviar" src="img/enviar.svg" alt="boton enviar"></button>
                 </div>
               </div>
             </div>

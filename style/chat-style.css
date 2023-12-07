@@ -103,7 +103,7 @@ li:hover{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding: 1em;
+	padding: 3px;
 }
 
 .asist1 {
@@ -121,8 +121,8 @@ li:hover{
 .contenedor-head {
 	border-radius: 15px 15px 0px 0px;
 	background: #5FBDCE;
-	width: 215px;
-	height: 76px;
+	width: 210px;
+	height: 40px;
 	display:flex;
     justify-content: left;
     align-items: center;
@@ -132,14 +132,14 @@ li:hover{
 .chatbox{
 	border-radius: 15px;
 	background: rgba(246, 246, 246, 0.40);
-	height: 30em;
+	height: 13em;
 	width: 15em;
 }
 
 .contenedor-mensajes{
 	border-radius: 0px 0px 16px 16px;
 	width: 190px;
-	height: 320px;
+	height: 10px;
 	padding: 24px;
 }
 
